@@ -1,0 +1,72 @@
+{
+  "name": "",
+  "authentication": [
+    "email"
+  ],
+  "roles": {
+    "admin": {},
+    "project_admin": {}
+  },
+  "models": {
+    "client": {
+      "attributes": {
+        "name": {
+          "label": "Client Name",
+          "type": "string",
+          "required": true
+        },
+        "companyName": {
+          "label": "Company Name",
+          "type": "string"
+        }
+      }
+    },
+    "project": {
+      "attributes": {
+        "name": {
+          "type": "string",
+          "required": true
+        },
+        "client": {
+          "model": "client",
+          "required": true
+        }
+      },
+      "permissions": {
+        "read": "*",
+        "write": [
+          "admin",
+          "project_admin"
+        ],
+        "edit": [
+          "admin",
+          "project_admin"
+        ],
+        "delete": "admin"
+      }
+    }
+  },
+  "views": {
+    "pages": {
+      "homepage": {
+      },
+      "projects": {
+      },
+      "create_project": {
+      },
+      "clients": {
+      },
+      "create_client": {
+      }
+    },
+    "map": {
+      "homepage": {
+        "projects": {
+          "create_project": null
+        },
+        "clients": {
+        }
+      }
+    }
+  }
+}

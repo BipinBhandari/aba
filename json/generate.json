@@ -1,0 +1,34 @@
+{
+  "container": "TestContainer",
+  "contextObject": "invoiceSettings",
+  "actions": [
+    {
+      "name": "save",
+      "params": [
+        "settings"
+      ],
+      "successParams": [
+        "message"
+      ],
+      "failureParams": [
+        "code",
+        "details"
+      ],
+      "saga": true,
+      "pluralize": false
+    },
+    {
+      "name": "load",
+      "params": [],
+      "successParams": [
+        "message"
+      ],
+      "failureParams": [
+        "code",
+        "details"
+      ],
+      "saga": true,
+      "pluralize": false
+    }
+  ]
+}

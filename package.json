@@ -1,0 +1,30 @@
+{
+  "name": "aba",
+  "version": "0.0.1",
+  "description": "JSON to application generator",
+  "main": "index.js",
+  "scripts": {
+    "start": "babel-node index.js --presets es2015,stage-2",
+    "test": "mocha --compilers js:babel-register",
+    "build": "babel lib -d dist --presets es2015,stage-2",
+    "serve": "node dist/index.js"
+  },
+  "author": "Bipin Bhandari",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-cli": "^6.23.0",
+    "babel-plugin-transform-async-to-generator": "^6.22.0",
+    "babel-preset-es2015": "^6.22.0",
+    "babel-preset-es2017": "^6.22.0",
+    "babel-preset-stage-2": "^6.22.0",
+    "babel-register": "^6.23.0",
+    "mocha": "^3.2.0"
+  },
+  "dependencies": {
+    "babel-generator": "^6.23.0",
+    "babel-traverse": "^6.23.1",
+    "babylon": "^6.16.1",
+    "handlebars": "^4.0.6",
+    "ramda": "^0.23.0"
+  }
+}

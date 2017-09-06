@@ -1,0 +1,19 @@
+import React, {Component} from 'react';
+
+import {reduxForm, Field, SubmissionError, formValueSelector} from 'redux-form/immutable';
+
+import {Form, ButtonGroup, Button, Alert, Modal, ModalHeader, ModalBody, NavItem, Tag} from 'reactstrap';
+import {connect} from "react-redux";
+
+export const FormName="{{formName}}";
+
+class {{formClassName}} extends React.Component {
+
+}
+
+const orm = reduxForm({
+    form: '{{formName}}',
+    validate,
+})({{formClassName}});
+
+export
