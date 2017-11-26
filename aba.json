@@ -1,0 +1,26 @@
+{
+    "name": "EduMonk",
+    "structure":{
+        "root":"app",
+        "universal": true,
+        "systems":[
+                    {
+                    "name": "client",
+                    "root": "client",
+                    "hasModules": true,
+                    "module":{
+                        "structure": {
+                            "atoms":{
+                            },
+                            "molecules":{
+                            },
+                            "organisms":{
+                            },
+                            "pages":{
+                            }
+                        }
+                    }
+                }
+        ]
+    }
+}
