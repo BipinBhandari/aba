@@ -20,6 +20,59 @@
                             }
                         }
                     }
+                },
+
+                {
+                    "name": "common",
+                    "root": "client",
+                    "hasModules": true,
+                    "module":{
+                        "structure": {
+                            "atoms":{
+                            },
+                            "molecules":{
+                            },
+                            "organisms":{
+                            },
+                            "pages":{
+                            }
+                        }
+                    }
+                },
+
+                {
+                    "name": "server",
+                    "root": "client",
+                    "hasModules": true,
+                    "module":{
+                        "structure": {
+                            "atoms":{
+                            },
+                            "molecules":{
+                            },
+                            "organisms":{
+                            },
+                            "pages":{
+                            }
+                        }
+                    }
+                },
+                {
+                    "name": "app",
+                    "root": "client",
+                    "hasModules": true,
+                    "module":{
+                        "structure": {
+                            "atoms":{
+                            },
+                            "molecules":{
+                            },
+                            "organisms":{
+                            },
+                            "pages":{
+                            }
+                        }
+                    }
                 }
         ]
     }
