@@ -1,79 +1,33 @@
 {
     "name": "EduMonk",
     "structure":{
-        "root":"app",
-        "universal": true,
-        "systems":[
-                    {
-                    "name": "client",
-                    "root": "client",
-                    "hasModules": true,
-                    "module":{
-                        "structure": {
-                            "atoms":{
-                            },
-                            "molecules":{
-                            },
-                            "organisms":{
-                            },
-                            "pages":{
-                            }
-                        }
-                    }
-                },
-
-                {
-                    "name": "common",
-                    "root": "client",
-                    "hasModules": true,
-                    "module":{
-                        "structure": {
-                            "atoms":{
-                            },
-                            "molecules":{
-                            },
-                            "organisms":{
-                            },
-                            "pages":{
-                            }
-                        }
-                    }
-                },
-
-                {
-                    "name": "server",
-                    "root": "client",
-                    "hasModules": true,
-                    "module":{
-                        "structure": {
-                            "atoms":{
-                            },
-                            "molecules":{
-                            },
-                            "organisms":{
-                            },
-                            "pages":{
-                            }
-                        }
-                    }
-                },
-                {
-                    "name": "app",
-                    "root": "client",
-                    "hasModules": true,
-                    "module":{
-                        "structure": {
-                            "atoms":{
-                            },
-                            "molecules":{
-                            },
-                            "organisms":{
-                            },
-                            "pages":{
-                            }
-                        }
-                    }
-                }
-        ]
-    }
+        "definition": [{
+            "name": "system",
+            "root": "app"
+        }, {
+            "name": "module",
+            "root": "modules"
+        }, {
+            "name": "type",
+            "root": null
+        }]
+    },
+    "commands": [
+        {
+            "name": "generate",
+            "command": "generate <system> <module> <type> <name>",
+            "description": "generate",
+            "options": [{
+                "short": "-s",
+                "long":"--withRedux",
+                "description":"with redux integration"
+            }, {
+                "short": "--type <type>",
+                "possible_options": ["stateless", "functional", "nd"],
+                "description":"component type"
+            }],
+            "action": "./aba/generators/generate"
+        }
+    ]
+    
 }
