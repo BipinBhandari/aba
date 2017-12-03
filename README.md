@@ -14,6 +14,12 @@ Currently at very early stage (testing on my projects)
 
 ### Usage
 TODO
+yarn add aba-gen
+create a folder aba in root of your directory
+create aba.json (https://github.com/BipinBhandari/aba/tree/master/aba/aba.json)
+create generator and templates (refer here for example: https://github.com/BipinBhandari/aba/tree/master/aba)
+create npm script
+done
 
 ### Development
 
